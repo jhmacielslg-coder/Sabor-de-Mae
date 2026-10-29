@@ -1,12 +1,22 @@
-import './style.css';
-import defaultData from '../public/data/products.json';
-
 // ============================================
-// BURGER PAULISTA — MAIN APPLICATION
+// SABOR DE MÃE — JANTINHAS E ESPETINHOS
 // ============================================
 
 // === STATE ===
-let DATA = defaultData;
+let DATA = {
+  config: {
+    storeName: "SABOR DE MÃE",
+    storeTagline: "Jantinhas e Espetinhos",
+    address: "Formosa/GO",
+    whatsapp: "5561996012099",
+    whatsappDisplay: "(61) 99601-2099",
+    deliveryFee: 9.00,
+    deliveryTime: "40–50 min",
+    pixKey: "61996012099"
+  },
+  categories: [],
+  products: []
+};
 let cart = [];
 let activeCategory = 'all';
 let currentProduct = null;
@@ -18,9 +28,15 @@ let currentDeliveryType = 'entrega'; // 'entrega' | 'retirada'
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
+// === ESCAPE ATTRIBUTE ===
+function escapeAttr(str) {
+  if (!str) return '';
+  return String(str).replace(/"/g, '&quot;');
+}
+
 // === RESOLVE IMAGE URL ===
 function resolveImageUrl(path) {
-  if (!path) return '';
+  if (!path) return './images/logo.jpg';
   if (path.startsWith('http://') || path.startsWith('https://')) return path;
   if (path.startsWith('./')) return path;
   if (path.startsWith('/')) return '.' + path;
@@ -29,10 +45,11 @@ function resolveImageUrl(path) {
 
 // === INIT ===
 async function init() {
-  DATA = defaultData;
-
   try {
-    const res = await fetch('./data/products.json');
+    let res = await fetch('./data/products.json');
+    if (!res.ok) {
+      res = await fetch('./public/data/products.json');
+    }
     if (res.ok) {
       const fetched = await res.json();
       if (fetched && fetched.products && fetched.products.length > 0) {
@@ -40,11 +57,17 @@ async function init() {
       }
     }
   } catch (err) {
-    console.warn('Usando dados locais de produtos:', err);
+    console.warn('Erro ao carregar products.json:', err);
   }
 
-  // Update dynamic store info in header/hero
+  // Update dynamic store info in header/hero/footer
   if (DATA && DATA.config) {
+    const titleEl = $('.header__title');
+    if (titleEl && DATA.config.storeName) titleEl.textContent = DATA.config.storeName;
+
+    const taglineEl = $('.header__tagline');
+    if (taglineEl && DATA.config.storeTagline) taglineEl.textContent = DATA.config.storeTagline;
+
     const addrEl = $('#storeAddress');
     if (addrEl && DATA.config.address) addrEl.textContent = DATA.config.address;
 
@@ -53,6 +76,18 @@ async function init() {
 
     const feeEl = $('#deliveryFeeDisplay');
     if (feeEl && DATA.config.deliveryFee !== undefined) feeEl.textContent = formatPrice(DATA.config.deliveryFee);
+
+    const waFloat = $('#whatsappFloat');
+    if (waFloat && DATA.config.whatsapp) waFloat.href = `https://wa.me/${DATA.config.whatsapp}`;
+
+    const footerAddr = $('#footerAddress');
+    if (footerAddr && DATA.config.address) footerAddr.textContent = DATA.config.address;
+
+    const footerWaLink = $('#footerWhatsappLink');
+    if (footerWaLink && DATA.config.whatsapp) footerWaLink.href = `https://wa.me/${DATA.config.whatsapp}`;
+
+    const footerWaDisplay = $('#footerWhatsappDisplay');
+    if (footerWaDisplay && DATA.config.whatsappDisplay) footerWaDisplay.textContent = DATA.config.whatsappDisplay;
   }
 
   renderCategories();
@@ -159,17 +194,18 @@ function createProductCard(product) {
   card.className = 'product-card';
   card.dataset.productId = product.id;
   const imgSrc = resolveImageUrl(product.image);
+  const safeName = escapeAttr(product.name);
   card.innerHTML = `
     <div class="product-card__image-wrapper">
-      <img class="product-card__image" src="${imgSrc}" alt="${product.name}" loading="lazy" />
-      ${product.badge ? `<span class="product-card__badge">${product.badge}</span>` : ''}
+      <img class="product-card__image" src="${imgSrc}" alt="${safeName}" loading="lazy" onerror="this.onerror=null;this.src='./images/logo.jpg';" />
+      ${product.badge ? `<span class="product-card__badge">${escapeAttr(product.badge)}</span>` : ''}
     </div>
     <div class="product-card__body">
       <h3 class="product-card__name">${product.name}</h3>
       <p class="product-card__desc">${product.description}</p>
       <div class="product-card__footer">
         <span class="product-card__price">${formatPrice(product.price)}</span>
-        <button class="product-card__add-btn" aria-label="Adicionar ${product.name}">+</button>
+        <button class="product-card__add-btn" aria-label="Adicionar ${safeName}">+</button>
       </div>
     </div>
   `;
@@ -188,8 +224,13 @@ function openProductModal(product) {
   modalQuantity = 1;
   selectedAddons = [];
 
-  $('#modalImage').src = resolveImageUrl(product.image);
-  $('#modalImage').alt = product.name;
+  const modalImg = $('#modalImage');
+  modalImg.onerror = function() {
+    this.onerror = null;
+    this.src = './images/logo.jpg';
+  };
+  modalImg.src = resolveImageUrl(product.image);
+  modalImg.alt = product.name;
   $('#modalTitle').textContent = product.name;
   $('#modalDescription').textContent = product.description;
   $('#modalPrice').textContent = formatPrice(product.price);
@@ -581,7 +622,9 @@ function submitOrder() {
   }
 
   // Build message
-  let msg = `🍔 *PEDIDO — BURGER PAULISTA*\n`;
+  const store = DATA.config?.storeName || 'SABOR DE MÃE';
+  const tagline = DATA.config?.storeTagline || 'Jantinhas e Espetinhos';
+  let msg = `🍢 *PEDIDO — ${store}*\n`;
   msg += `━━━━━━━━━━━━━━━━━━\n\n`;
 
   cart.forEach((item, i) => {
@@ -617,7 +660,7 @@ function submitOrder() {
     }
   } else {
     msg += `🏪 *Tipo:* Retirada no Balcão\n`;
-    msg += `📍 *Local:* Laguinho do Vovô - Formosa/GO\n`;
+    msg += `📍 *Local:* ${DATA.config?.address || 'Formosa/GO'}\n`;
     msg += `👤 *Cliente:* ${name}\n`;
   }
   msg += `\n`;
@@ -636,7 +679,7 @@ function submitOrder() {
   }
 
   msg += `\n⏰ Tempo estimado: ${isDelivery ? DATA.config.deliveryTime : '20–30 minutos'}\n`;
-  msg += `\n_Pedido enviado pelo cardápio digital Burger Paulista_`;
+  msg += `\n_Pedido enviado pelo cardápio digital ${store} - ${tagline}_`;
 
   const encoded = encodeURIComponent(msg);
   const url = `https://wa.me/${DATA.config.whatsapp}?text=${encoded}`;

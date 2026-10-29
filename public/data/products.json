@@ -1,156 +1,1087 @@
 {
   "config": {
-    "storeName": "Burger Paulista",
-    "storeTagline": "Hamburgueria Artesanal",
-    "address": "Laguinho do Vovô - Formosa/GO",
-    "whatsapp": "5561996243006",
-    "whatsappDisplay": "(61) 99624-3006",
-    "deliveryFee": 6.00,
-    "deliveryTime": "35–50 min",
-    "pixKey": "61996243006",
+    "storeName": "SABOR DE MÃE",
+    "storeTagline": "Jantinhas e Espetinhos",
+    "address": "Formosa/GO",
+    "whatsapp": "5561996012099",
+    "whatsappDisplay": "(61) 99601-2099",
+    "deliveryFee": 9.00,
+    "deliveryTime": "40–50 min",
+    "pixKey": "61996012099",
     "primaryColor": "#FF6B00",
     "instagram": "#",
     "facebook": "#"
   },
   "categories": [
-    { "id": "artesanais", "name": "Artesanais", "icon": "🍔" },
-    { "id": "combos", "name": "Combos", "icon": "🎉" },
-    { "id": "batatas", "name": "Batatas", "icon": "🍟" },
-    { "id": "bebidas", "name": "Bebidas", "icon": "🥤" }
+    {
+      "id": "jantinhas",
+      "name": "Jantinhas",
+      "icon": "🍛"
+    },
+    {
+      "id": "espetinhos",
+      "name": "Espetinhos",
+      "icon": "🍖"
+    },
+    {
+      "id": "adicionais",
+      "name": "Adicionais",
+      "icon": "🥣"
+    },
+    {
+      "id": "porções",
+      "name": "Porções",
+      "icon": "🍟"
+    },
+    {
+      "id": "barcas",
+      "name": "Barcas",
+      "icon": "🍖"
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "icon": "🥤"
+    }
   ],
   "products": [
     {
       "id": 1,
-      "name": "X-Bacon Especial",
-      "category": "artesanais",
-      "description": "Hambúrguer artesanal 180g, queijo cheddar, bacon crocante, alface, tomate e molho especial da casa.",
-      "price": 32.90,
-      "image": "/images/x-bacon-especial.jpg",
+      "name": "Jantinha Inteira 200grs",
+      "category": "jantinhas",
+      "description": "Arroz, feijão tropeiro, mandioca cozida e vinagrete.",
+      "price": 15.0,
+      "image": "/images/jantinha001.jpg",
       "badge": "Mais Pedido",
       "addons": [
-        { "name": "Bacon extra", "price": 5.00 },
-        { "name": "Cheddar extra", "price": 4.00 },
-        { "name": "Hambúrguer extra", "price": 9.00 },
-        { "name": "Molho especial", "price": 2.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 2,
-      "name": "X-Salada Clássico",
-      "category": "artesanais",
-      "description": "Hambúrguer artesanal 150g, queijo prato, alface, tomate, cebola roxa e maionese artesanal no pão brioche.",
-      "price": 28.90,
-      "image": "/images/x-salada.jpg",
-      "badge": "",
+      "name": "1/2 Jantinha 100grs",
+      "category": "jantinhas",
+      "description": "Arroz, feijão tropeiro, mandioca cozida e vinagrete.",
+      "price": 12.0,
+      "image": "/images/jantinha002.jpg",
+      "badge": "Mais Pedido",
       "addons": [
-        { "name": "Bacon extra", "price": 5.00 },
-        { "name": "Queijo extra", "price": 4.00 },
-        { "name": "Hambúrguer extra", "price": 9.00 },
-        { "name": "Ovo", "price": 3.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 3,
-      "name": "Smash Burger Duplo",
-      "category": "artesanais",
-      "description": "Dois smash patties 90g cada, queijo americano derretido, picles, cebola caramelizada e ketchup especial.",
-      "price": 34.90,
-      "image": "/images/smash-burger.jpg",
-      "badge": "Novidade",
+      "name": "Costela Desossada",
+      "category": "espetinhos",
+      "description": "Espetinho de costela desossada assado na brasa.",
+      "price": 12.0,
+      "image": "/images/espetinho001.jpg",
+      "badge": "",
       "addons": [
-        { "name": "Smash patty extra", "price": 8.00 },
-        { "name": "Queijo extra", "price": 4.00 },
-        { "name": "Bacon", "price": 5.00 },
-        { "name": "Cebola crispy", "price": 3.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 4,
-      "name": "Combo Burger Duplo",
-      "category": "combos",
-      "description": "Hambúrguer duplo artesanal com cheddar, batata frita média e refrigerante 350ml.",
-      "price": 45.90,
-      "image": "/images/combo-duplo.jpg",
-      "badge": "Economia",
+      "name": "Alcatra",
+      "category": "espetinhos",
+      "description": "Espetinho de alcatra assado na brasa.",
+      "price": 12.0,
+      "image": "/images/espetinho002.jpg",
+      "badge": "",
       "addons": [
-        { "name": "Trocar refri por suco", "price": 2.00 },
-        { "name": "Bacon extra", "price": 5.00 },
-        { "name": "Batata grande (+100g)", "price": 5.00 },
-        { "name": "Onion rings", "price": 6.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 5,
-      "name": "Combo X-Bacon",
-      "category": "combos",
-      "description": "X-Bacon artesanal 180g, porção de batata frita e refrigerante lata 350ml. O combo mais pedido!",
-      "price": 49.90,
-      "image": "/images/x-bacon-especial.jpg",
+      "name": "Franbacon",
+      "category": "espetinhos",
+      "description": "Espetinho de frango enrolado no bacon.",
+      "price": 12.0,
+      "image": "/images/espetinho003.jpg",
       "badge": "Mais Pedido",
       "addons": [
-        { "name": "Trocar refri por suco", "price": 2.00 },
-        { "name": "Cheddar extra", "price": 4.00 },
-        { "name": "Bacon extra", "price": 5.00 },
-        { "name": "Batata grande (+100g)", "price": 5.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 6,
-      "name": "Batata Recheada Família",
-      "category": "batatas",
-      "description": "Batata Frita 600g, queijo cheddar, bacon crocante e molho especial da casa.",
-      "price": 40.00,
-      "image": "/images/batata-recheada.jpg",
-      "badge": "Mais Pedido",
+      "name": "Carne de Sol",
+      "category": "espetinhos",
+      "description": "Espetinho de carne de sol assado na brasa.",
+      "price": 14.0,
+      "image": "/images/espetinho004.jpg",
+      "badge": "",
       "addons": [
-        { "name": "Bacon extra", "price": 5.00 },
-        { "name": "Cheddar extra", "price": 4.00 },
-        { "name": "Molho especial", "price": 2.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 7,
-      "name": "Batata Frita Tradicional",
-      "category": "batatas",
-      "description": "Porção generosa de batata frita crocante (400g) com sal e temperos da casa.",
-      "price": 22.00,
-      "image": "/images/batata-recheada.jpg",
+      "name": "Linguiça de Frango",
+      "category": "espetinhos",
+      "description": "Espetinho de linguiça de frango.",
+      "price": 10.0,
+      "image": "/images/espetinho005.jpg",
       "badge": "",
       "addons": [
-        { "name": "Cheddar", "price": 4.00 },
-        { "name": "Bacon", "price": 5.00 },
-        { "name": "Molho especial", "price": 2.00 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Contra-Filé",
+      "category": "espetinhos",
+      "description": "Espetinho de contra-filé assado na brasa.",
+      "price": 12.0,
+      "image": "/images/espetinho006.jpg",
+      "badge": "Mais Pedido",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 9,
-      "name": "Refrigerante Lata 350ml",
-      "category": "bebidas",
-      "description": "Coca-Cola, Guaraná Antarctica ou Fanta Laranja. Gelado e refrescante!",
-      "price": 7.00,
-      "image": "/images/refrigerante.jpg",
+      "name": "Kafta com Queijo",
+      "category": "espetinhos",
+      "description": "Espetinho de kafta recheada com queijo.",
+      "price": 12.0,
+      "image": "/images/espetinho007.jpg",
       "badge": "",
-      "addons": []
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
     },
     {
       "id": 10,
-      "name": "Suco Natural 500ml",
-      "category": "bebidas",
-      "description": "Suco natural feito na hora. Sabores: Laranja, Abacaxi com Hortelã ou Maracujá.",
-      "price": 12.00,
-      "image": "/images/suco-natural.jpg",
+      "name": "Medalhão de Carne",
+      "category": "espetinhos",
+      "description": "Espetinho de medalhão de carne com bacon.",
+      "price": 12.0,
+      "image": "/images/espetinho008.jpg",
       "badge": "",
       "addons": [
-        { "name": "Sem açúcar", "price": 0 }
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
       ]
     },
     {
       "id": 11,
+      "name": "Cupim Grill",
+      "category": "espetinhos",
+      "description": "Espetinho de cupim grill macio e suculento.",
+      "price": 15.0,
+      "image": "/images/espetinho009.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Meio da Asa",
+      "category": "espetinhos",
+      "description": "Espetinho de meio da asa (tulipa) de frango.",
+      "price": 12.0,
+      "image": "/images/espetinho010.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Filé de Sobrecoxa",
+      "category": "espetinhos",
+      "description": "Espetinho de filé de sobrecoxa de frango.",
+      "price": 10.0,
+      "image": "/images/espetinho011.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Filé de Peito",
+      "category": "espetinhos",
+      "description": "Espetinho de filé de peito de frango.",
+      "price": 12.0,
+      "image": "/images/espetinho012.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Linguiça c/ Pimenta (Suína)",
+      "category": "espetinhos",
+      "description": "Espetinho de linguiça suína apimentada.",
+      "price": 12.0,
+      "image": "/images/espetinho013.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Linguiça s/ Pimenta (Suína)",
+      "category": "espetinhos",
+      "description": "Espetinho de linguiça suína tradicional sem pimenta.",
+      "price": 12.0,
+      "image": "/images/espetinho014.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Copa Lombo",
+      "category": "espetinhos",
+      "description": "Espetinho de copa lombo suíno.",
+      "price": 12.0,
+      "image": "/images/espetinho015.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Costelinha de Porco",
+      "category": "espetinhos",
+      "description": "Espetinho de costelinha suína assada na brasa.",
+      "price": 12.0,
+      "image": "/images/espetinho016.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Misto",
+      "category": "espetinhos",
+      "description": "Espetinho misto tradicional.",
+      "price": 10.0,
+      "image": "/images/espetinho017.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Romeu e Julieta",
+      "category": "espetinhos",
+      "description": "Espetinho de queijo com goiabada.",
+      "price": 15.0,
+      "image": "/images/espetinho018.jpg",
+      "badge": "Novidade",
+      "addons": []
+    },
+    {
+      "id": 21,
+      "name": "Queijo Provolone",
+      "category": "espetinhos",
+      "description": "Espetinho de queijo provolone assado.",
+      "price": 10.0,
+      "image": "/images/espetinho019.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 22,
+      "name": "Queijo Coalho",
+      "category": "espetinhos",
+      "description": "Espetinho de queijo coalho assado na brasa.",
+      "price": 10.0,
+      "image": "/images/espetinho020.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 23,
+      "name": "Pão de Alho",
+      "category": "espetinhos",
+      "description": "Pão de alho crocante assado na brasa.",
+      "price": 10.0,
+      "image": "/images/espetinho021.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 24,
+      "name": "Coração de Frango",
+      "category": "espetinhos",
+      "description": "Espetinho de coração de frango.",
+      "price": 12.0,
+      "image": "/images/espetinho022.jpg",
+      "badge": "",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Arroz 200grs",
+      "category": "adicionais",
+      "description": "Porção individual de arroz branco (200g).",
+      "price": 12.0,
+      "image": "/images/adicional001.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 26,
+      "name": "Feijão Tropeiro 200grs",
+      "category": "adicionais",
+      "description": "Porção individual de feijão tropeiro (200g).",
+      "price": 12.0,
+      "image": "/images/adicional002.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 27,
+      "name": "Mandioca Cozida 200grs",
+      "category": "adicionais",
+      "description": "Porção individual de mandioca cozida (200g).",
+      "price": 10.0,
+      "image": "/images/adicional003.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 28,
+      "name": "Vinagrete 200grs",
+      "category": "adicionais",
+      "description": "Porção individual de vinagrete fresco (200g).",
+      "price": 10.0,
+      "image": "/images/adicional004.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 29,
+      "name": "Batata Frita 200grs",
+      "category": "adicionais",
+      "description": "Porção adicional de batata frita (200g).",
+      "price": 12.0,
+      "image": "/images/adicional005.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 30,
+      "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+      "category": "adicionais",
+      "description": "Porção individual de farofa especial com bacon, cenoura e uva-passas (200g).",
+      "price": 14.0,
+      "image": "/images/adicional006.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 31,
+      "name": "Batata Frita Simples 200grs",
+      "category": "porções",
+      "description": "Porção de batata frita tradicional crocante (200g).",
+      "price": 12.0,
+      "image": "/images/porcao001.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 32,
+      "name": "Batata Frita c/ Queijo 200grs",
+      "category": "porções",
+      "description": "Porção de batata frita coberta com queijo (200g).",
+      "price": 16.0,
+      "image": "/images/porcao002.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 33,
+      "name": "Batata Frita c/ Cheddar e Bacon 250grs",
+      "category": "porções",
+      "description": "Porção de batata frita com cheddar cremoso e bacon crocante (250g).",
+      "price": 20.0,
+      "image": "/images/porcao003.jpg",
+      "badge": "Mais Pedido",
+      "addons": []
+    },
+    {
+      "id": 34,
+      "name": "Batata Frita c/ Cheddar e Bacon 500grs",
+      "category": "porções",
+      "description": "Porção tamanho família de batata frita com cheddar cremoso e bacon crocante (500g).",
+      "price": 35.0,
+      "image": "/images/porcao004.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 35,
+      "name": "Barca de Churrasco \"P\"",
+      "category": "barcas",
+      "description": "Mandioca, vinagrete, 1 pão de alho, 1 queijo coalho, 1 espeto de contra-filé e 1 espeto de franbacon. Serve 2 pessoas.",
+      "price": 40.0,
+      "image": "/images/barca001.jpg",
+      "badge": "Serve 2 pessoas",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Barca de Churrasco \"G\"",
+      "category": "barcas",
+      "description": "Mandioca, vinagrete, 1 pão de alho, 1 queijo coalho, 1 espeto de contra-filé, 1 espeto de franbacon e 1 espeto de alcatra. Serve 3 pessoas.",
+      "price": 66.0,
+      "image": "/images/barca002.jpg",
+      "badge": "Serve 3 pessoas",
+      "addons": [
+        {
+          "name": "Mandioca Cozida 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Vinagrete 200grs",
+          "price": 10.0
+        },
+        {
+          "name": "Arroz 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Feijão Tropeiro 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Batata frita 200grs",
+          "price": 12.0
+        },
+        {
+          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
+          "price": 14.0
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Barca de Petiscos",
+      "category": "barcas",
+      "description": "Amendoim tipo japonês, salaminho, ovo de codorna, azeitona s/ caroço e molho rosé. Serve 2 pessoas.",
+      "price": 25.0,
+      "image": "/images/barca003.jpg",
+      "badge": "Serve 2 pessoas",
+      "addons": []
+    },
+    {
+      "id": 38,
+      "name": "Coca-Cola 310ml",
+      "category": "bebidas",
+      "description": "Refrigerante Coca-Cola lata 310ml.",
+      "price": 6.0,
+      "image": "/images/bebida001.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 39,
+      "name": "Pepsi 350ml",
+      "category": "bebidas",
+      "description": "Refrigerante Pepsi lata 350ml.",
+      "price": 6.0,
+      "image": "/images/bebida002.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 40,
+      "name": "Guaraná Antarctica 269ml",
+      "category": "bebidas",
+      "description": "Refrigerante Guaraná Antarctica lata 269ml.",
+      "price": 6.0,
+      "image": "/images/bebida003.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 41,
+      "name": "Energético 473ml",
+      "category": "bebidas",
+      "description": "Bebida energética lata 473ml.",
+      "price": 13.0,
+      "image": "/images/bebida004.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 42,
+      "name": "Água com Gás 500ml",
+      "category": "bebidas",
+      "description": "Água mineral com gás garrafa 500ml.",
+      "price": 3.5,
+      "image": "/images/bebida005.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 43,
       "name": "Água Mineral 500ml",
       "category": "bebidas",
-      "description": "Água mineral sem gás, geladinha. Perfeita para acompanhar seu pedido.",
-      "price": 4.00,
-      "image": "/images/agua-mineral.jpg",
+      "description": "Água mineral sem gás garrafa 500ml.",
+      "price": 3.0,
+      "image": "/images/bebida006.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 44,
+      "name": "Amstel 269ml",
+      "category": "bebidas",
+      "description": "Cerveja Amstel lata 269ml.",
+      "price": 6.0,
+      "image": "/images/bebida007.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 45,
+      "name": "Heineken 269ml",
+      "category": "bebidas",
+      "description": "Cerveja Heineken lata 269ml.",
+      "price": 9.0,
+      "image": "/images/bebida008.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 46,
+      "name": "Brahma 269ml",
+      "category": "bebidas",
+      "description": "Cerveja Brahma lata 269ml.",
+      "price": 5.5,
+      "image": "/images/bebida009.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 47,
+      "name": "Suco de Maracujá 300ml",
+      "category": "bebidas",
+      "description": "Copo de suco de maracujá 300ml.",
+      "price": 10.0,
+      "image": "/images/bebida010.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 48,
+      "name": "Suco de Laranja 300ml",
+      "category": "bebidas",
+      "description": "Copo de suco de laranja 300ml.",
+      "price": 10.0,
+      "image": "/images/bebida011.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 49,
+      "name": "Suco de Abacaxi 300ml",
+      "category": "bebidas",
+      "description": "Copo de suco de abacaxi 300ml.",
+      "price": 10.0,
+      "image": "/images/bebida012.jpg",
       "badge": "",
       "addons": []
     }

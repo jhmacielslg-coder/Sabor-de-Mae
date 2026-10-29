@@ -1,9 +1,9 @@
 {
-  "name": "burger-paulista",
+  "name": "sabor-de-mae",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Cardápio digital da Burger Paulista - Hamburgueria Artesanal em Formosa/GO",
+  "description": "Cardápio digital do SABOR DE MÃE - Jantinhas e Espetinhos em Formosa/GO",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

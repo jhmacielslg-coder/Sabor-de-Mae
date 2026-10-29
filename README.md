@@ -1,6 +1,6 @@
-# 🍔 Burger Paulista — Cardápio Digital & Delivery
+# 🍢 SABOR DE MÃE — Jantinhas e Espetinhos
 
-Cardápio digital moderno, responsivo e intuitivo desenvolvido para a hamburgueria artesanal **Burger Paulista** em Formosa/GO.
+Cardápio digital moderno, responsivo e intuitivo desenvolvido para **SABOR DE MÃE - Jantinhas e Espetinhos** em Formosa/GO.
 
 ## 🚀 Tecnologias
 - **Vite** + **JavaScript Vanilla**
