@@ -24,11 +24,6 @@
       "icon": "🍖"
     },
     {
-      "id": "adicionais",
-      "name": "Adicionais",
-      "icon": "🥣"
-    },
-    {
       "id": "porções",
       "name": "Porções",
       "icon": "🍟"
@@ -784,66 +779,6 @@
           "price": 14.0
         }
       ]
-    },
-    {
-      "id": 25,
-      "name": "Arroz 200grs",
-      "category": "adicionais",
-      "description": "Porção individual de arroz branco (200g).",
-      "price": 12.0,
-      "image": "/images/adicional001.jpg",
-      "badge": "",
-      "addons": []
-    },
-    {
-      "id": 26,
-      "name": "Feijão Tropeiro 200grs",
-      "category": "adicionais",
-      "description": "Porção individual de feijão tropeiro (200g).",
-      "price": 12.0,
-      "image": "/images/adicional002.jpg",
-      "badge": "",
-      "addons": []
-    },
-    {
-      "id": 27,
-      "name": "Mandioca Cozida 200grs",
-      "category": "adicionais",
-      "description": "Porção individual de mandioca cozida (200g).",
-      "price": 10.0,
-      "image": "/images/adicional003.jpg",
-      "badge": "",
-      "addons": []
-    },
-    {
-      "id": 28,
-      "name": "Vinagrete 200grs",
-      "category": "adicionais",
-      "description": "Porção individual de vinagrete fresco (200g).",
-      "price": 10.0,
-      "image": "/images/adicional004.jpg",
-      "badge": "",
-      "addons": []
-    },
-    {
-      "id": 29,
-      "name": "Batata Frita 200grs",
-      "category": "adicionais",
-      "description": "Porção adicional de batata frita (200g).",
-      "price": 12.0,
-      "image": "/images/adicional005.jpg",
-      "badge": "",
-      "addons": []
-    },
-    {
-      "id": 30,
-      "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
-      "category": "adicionais",
-      "description": "Porção individual de farofa especial com bacon, cenoura e uva-passas (200g).",
-      "price": 14.0,
-      "image": "/images/adicional006.jpg",
-      "badge": "",
-      "addons": []
     },
     {
       "id": 31,
