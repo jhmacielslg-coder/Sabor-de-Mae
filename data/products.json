@@ -636,41 +636,6 @@
       ]
     },
     {
-      "id": 19,
-      "name": "Misto",
-      "category": "espetinhos",
-      "description": "Espetinho misto tradicional.",
-      "price": 10.0,
-      "image": "/images/espetinho017.jpg",
-      "badge": "",
-      "addons": [
-        {
-          "name": "Mandioca Cozida 200grs",
-          "price": 10.0
-        },
-        {
-          "name": "Vinagrete 200grs",
-          "price": 10.0
-        },
-        {
-          "name": "Arroz 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Feijão Tropeiro 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Batata frita 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
-          "price": 14.0
-        }
-      ]
-    },
-    {
       "id": 20,
       "name": "Romeu e Julieta",
       "category": "espetinhos",
