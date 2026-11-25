@@ -44,44 +44,9 @@
       "id": 1,
       "name": "Jantinha Inteira 200grs",
       "category": "jantinhas",
-      "description": "Arroz, feijão tropeiro, mandioca cozida e vinagrete.",
-      "price": 15.0,
+      "description": "Arroz, feijão tropeiro, mandioca cozida e vinagrete. E um espeto MISTO ( Carne, Frango e Calabresa)",
+      "price": 25.0,
       "image": "/images/jantinha001.jpg",
-      "badge": "Mais Pedido",
-      "addons": [
-        {
-          "name": "Mandioca Cozida 200grs",
-          "price": 10.0
-        },
-        {
-          "name": "Vinagrete 200grs",
-          "price": 10.0
-        },
-        {
-          "name": "Arroz 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Feijão Tropeiro 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Batata frita 200grs",
-          "price": 12.0
-        },
-        {
-          "name": "Farofa de Bacon, Cenoura e Uva-Passas 200grs",
-          "price": 14.0
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "1/2 Jantinha 100grs",
-      "category": "jantinhas",
-      "description": "Arroz, feijão tropeiro, mandioca cozida e vinagrete.",
-      "price": 12.0,
-      "image": "/images/jantinha002.jpg",
       "badge": "Mais Pedido",
       "addons": [
         {
@@ -902,121 +867,151 @@
     },
     {
       "id": 38,
-      "name": "Coca-Cola 310ml",
+      "name": "Pepsi 1.5l",
       "category": "bebidas",
-      "description": "Refrigerante Coca-Cola lata 310ml.",
-      "price": 6.0,
-      "image": "/images/bebida001.jpg",
+      "description": "Refrigerante Pepsi 1.5L.",
+      "price": 11.0,
+      "image": "/images/bebida001.png",
       "badge": "",
       "addons": []
     },
     {
       "id": 39,
-      "name": "Pepsi 350ml",
+      "name": "Coca-Cola 1.5L",
       "category": "bebidas",
-      "description": "Refrigerante Pepsi lata 350ml.",
-      "price": 6.0,
-      "image": "/images/bebida002.jpg",
+      "description": "Refrigerante Coca-Cola 1.5L.",
+      "price": 12.0,
+      "image": "/images/bebida002.png",
       "badge": "",
       "addons": []
     },
     {
       "id": 40,
-      "name": "Guaraná Antarctica 269ml",
+      "name": "Guaraná Antarctica 1.5L",
       "category": "bebidas",
-      "description": "Refrigerante Guaraná Antarctica lata 269ml.",
-      "price": 6.0,
-      "image": "/images/bebida003.jpg",
+      "description": "Refrigerante Guaraná Antarctica 1.5L.",
+      "price": 12.0,
+      "image": "/images/bebida003.png",
       "badge": "",
       "addons": []
     },
     {
       "id": 41,
-      "name": "Energético 473ml",
+      "name": "Coca-Cola 310ml",
       "category": "bebidas",
-      "description": "Bebida energética lata 473ml.",
-      "price": 13.0,
+      "description": "Refrigerante Coca-Cola lata 310ml.",
+      "price": 6.0,
       "image": "/images/bebida004.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 42,
-      "name": "Água com Gás 500ml",
+      "name": "Pepsi 350ml",
       "category": "bebidas",
-      "description": "Água mineral com gás garrafa 500ml.",
-      "price": 3.5,
+      "description": "Refrigerante Pepsi lata 350ml.",
+      "price": 6.0,
       "image": "/images/bebida005.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 43,
-      "name": "Água Mineral 500ml",
+      "name": "Guaraná Antarctica 269ml",
       "category": "bebidas",
-      "description": "Água mineral sem gás garrafa 500ml.",
-      "price": 3.0,
+      "description": "Refrigerante Guaraná Antarctica lata 269ml.",
+      "price": 6.0,
       "image": "/images/bebida006.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 44,
-      "name": "Amstel 269ml",
+      "name": "Energético 473ml",
       "category": "bebidas",
-      "description": "Cerveja Amstel lata 269ml.",
-      "price": 6.0,
+      "description": "Bebida energética lata 473ml.",
+      "price": 13.0,
       "image": "/images/bebida007.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 45,
-      "name": "Heineken 269ml",
+      "name": "Água com Gás 500ml",
       "category": "bebidas",
-      "description": "Cerveja Heineken lata 269ml.",
-      "price": 9.0,
+      "description": "Água mineral com gás garrafa 500ml.",
+      "price": 3.5,
       "image": "/images/bebida008.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 46,
-      "name": "Brahma 269ml",
+      "name": "Água Mineral 500ml",
       "category": "bebidas",
-      "description": "Cerveja Brahma lata 269ml.",
-      "price": 5.5,
+      "description": "Água mineral sem gás garrafa 500ml.",
+      "price": 3.0,
       "image": "/images/bebida009.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 47,
-      "name": "Suco de Maracujá 300ml",
+      "name": "Amstel 269ml",
       "category": "bebidas",
-      "description": "Copo de suco de maracujá 300ml.",
-      "price": 10.0,
+      "description": "Cerveja Amstel lata 269ml.",
+      "price": 6.0,
       "image": "/images/bebida010.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 48,
-      "name": "Suco de Laranja 300ml",
+      "name": "Heineken 269ml",
       "category": "bebidas",
-      "description": "Copo de suco de laranja 300ml.",
-      "price": 10.0,
+      "description": "Cerveja Heineken lata 269ml.",
+      "price": 9.0,
       "image": "/images/bebida011.jpg",
       "badge": "",
       "addons": []
     },
     {
       "id": 49,
+      "name": "Brahma 269ml",
+      "category": "bebidas",
+      "description": "Cerveja Brahma lata 269ml.",
+      "price": 5.5,
+      "image": "/images/bebida012.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 50,
+      "name": "Suco de Maracujá 300ml",
+      "category": "bebidas",
+      "description": "Copo de suco de maracujá 300ml.",
+      "price": 10.0,
+      "image": "/images/bebida013.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 51,
+      "name": "Suco de Laranja 300ml",
+      "category": "bebidas",
+      "description": "Copo de suco de laranja 300ml.",
+      "price": 10.0,
+      "image": "/images/bebida014.jpg",
+      "badge": "",
+      "addons": []
+    },
+    {
+      "id": 52,
       "name": "Suco de Abacaxi 300ml",
       "category": "bebidas",
       "description": "Copo de suco de abacaxi 300ml.",
       "price": 10.0,
-      "image": "/images/bebida012.jpg",
+      "image": "/images/bebida015.jpg",
       "badge": "",
       "addons": []
     }
